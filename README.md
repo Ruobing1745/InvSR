@@ -14,6 +14,8 @@ Download the original model from https://github.com/zsyOAOA/InvSR. Replace the o
 
 This work revises `sampler_invsr.py` and `inference_invsr.py` from the original InvSR model at https://github.com/zsyOAOA/InvSR into two distinct versions for open-loop and closed-loop modes. The open-loop versions are renamed as `sampler_invsr_open.py` and `inference_invsr_open.py`, whereas the closed-loop versions keep the original file names `sampler_invsr.py` and `inference_invsr.py`. Researchers can compare the performance differences between open-loop and closed-loop schemes by calling different versions accordingly.
 
+We adopt the datasets sourced from https://github.com/zhengchen1999/BI-DiffSR for all experiments.
+
 Moreover, we provide the `InvSR.ipynb` file, which can be adjusted and executed flexibly based on the local experimental environment.
 
 We sincerely appreciate the model resources provided by https://github.com/zsyOAOA/InvSR.

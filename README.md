@@ -10,10 +10,10 @@ This paper adopts the frist correction strategy.
 
 This paper proposes a closed-loop diffusion model for image super-resolution, namely **Closed-Loop Arbitrary-steps Image Super-resolution via Diffusion Inversion (CVPR 2025)**. On the basis of the original Diffusion Model for Image Super-Resolution, this paper introduces closed-loop feedback optimization mechanism, and effectively improves the image reconstruction quality of the model through multiple residual feedback iterations.
 
-The operating environment and experimental datasets for model operation are available at https://github.com/zsyOAOA/InvSR.
+Download the original model from https://github.com/zsyOAOA/InvSR. Replace the original scripts with the provided ones to realize the closed-loop modification of the model.
 
-We revised `sampler_invsr.py` and `inference_invsr.py` into two separate versions for open-loop and closed-loop modes respectively.
-The open-loop versions are named `sampler_invsr_open.py` and `inference_invsr_open.py`, while the closed-loop versions remain as `sampler_invsr.py` and `inference_invsr.py`.
-You can compare the differences between open-loop and closed-loop schemes by invoking corresponding files.
+This work revises `sampler_invsr.py` and `inference_invsr.py` from the original InvSR model at https://github.com/zsyOAOA/InvSR into two distinct versions for open-loop and closed-loop modes. The open-loop versions are renamed as `sampler_invsr_open.py` and `inference_invsr_open.py`, whereas the closed-loop versions keep the original file names `sampler_invsr.py` and `inference_invsr.py`. Researchers can compare the performance differences between open-loop and closed-loop schemes by calling different versions accordingly.
 
-Besides, we provide the `InvSR.ipynb` file, which can be modified and run adaptively according to your own experimental environment.
+Moreover, we provide the `InvSR.ipynb` file, which can be adjusted and executed flexibly based on the local experimental environment.
+
+We sincerely appreciate the model resources provided by https://github.com/zsyOAOA/InvSR.
